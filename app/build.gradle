@@ -29,4 +29,12 @@ dependencies {
 
     //ExoPlayer
     implementation 'com.google.android.exoplayer:exoplayer:r2.5.1'
+
+    def latest_version = "2.5.0"
+    //Rectrofit
+    implementation "com.squareup.retrofit2:retrofit:$latest_version"
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //Gson Converter
+    implementation "com.squareup.retrofit2:converter-gson:$latest_version"
 }
