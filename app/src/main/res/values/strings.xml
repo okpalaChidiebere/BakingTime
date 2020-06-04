@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BakingTime</string>
+    
+    <!-- Test Strings-->
+    <string name="RecipeCard">Recipe Card</string>
+    <string name="RecipeIngredients">Recipe Ingredients</string>
+    <string name="RecipeStepDescrip">Recipe Step Description</string>
+    <string name="MediaPlayer">Media Player</string>
+    <string name="RecipeInstruction">Recipe Step Instruction</string>
+    <string name="nav_step">Navigation Step</string>
+
+</resources>
