@@ -16,7 +16,8 @@
 
         </activity>
         <activity android:name=".RecipeName"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".MainActivity">

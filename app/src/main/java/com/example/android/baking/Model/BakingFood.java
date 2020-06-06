@@ -1,9 +1,10 @@
 package com.example.android.baking.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BakingFood {
+public class BakingFood implements Serializable {
 
     private int id;
     private String name;
@@ -71,7 +72,7 @@ public class BakingFood {
 
     @Override
     public String toString() {
-        return "BakingFood{" +
+        return "{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", ingredients=" + ingredients +

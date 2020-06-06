@@ -1,6 +1,8 @@
 package com.example.android.baking.Model;
 
-public class Ingredients {
+import java.io.Serializable;
+
+public class Ingredients implements Serializable {
 
     private double quantity;
     private String measure;
