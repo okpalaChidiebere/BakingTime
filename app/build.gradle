@@ -28,7 +28,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //ExoPlayer
-    implementation 'com.google.android.exoplayer:exoplayer:r2.5.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
 
     def latest_version = "2.5.0"
     //Rectrofit
