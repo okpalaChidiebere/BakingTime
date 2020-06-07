@@ -17,22 +17,37 @@ import androidx.recyclerview.widget.RecyclerView;
 public class RecipeStepAdapter extends RecyclerView.Adapter<RecipeStepAdapter.RecipeStepAdapterViewHolder>{
 
     private List<Steps> mSteps;
+    private final RecipeStepAdapterOnClickHandler mClickHandler;
 
-    public RecipeStepAdapter(List<Steps> steps){
+    public interface RecipeStepAdapterOnClickHandler {
+        void onClick(Steps recipeSteps);
+    }
+
+    public RecipeStepAdapter(List<Steps> steps, RecipeStepAdapterOnClickHandler clickHandler){
         this.mSteps = steps;
+        this.mClickHandler = clickHandler;
     }
 
     /*public void setAdapter(List<Steps> data){
         this.mSteps = data;
     }*/
 
-    public class RecipeStepAdapterViewHolder extends RecyclerView.ViewHolder{
+    public class RecipeStepAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public final TextView mRecipeSteps;
 
         public RecipeStepAdapterViewHolder(View view){
             super(view);
 
             mRecipeSteps = (TextView) view.findViewById(R.id.tv_foodRecipeStep);
+
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            int adapterPosition = getAdapterPosition();
+            Steps recipeSteps = mSteps.get(adapterPosition);
+            mClickHandler.onClick(recipeSteps);
         }
     }
 

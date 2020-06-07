@@ -11,13 +11,13 @@ public class Steps implements Serializable {
     private String thumbnailURL;
 
 
-    /*public Steps(int id, String shortDescription, String description, String videoURL, String thumbnailURL) {
+    public Steps(int id, String shortDescription, String description, String videoURL, String thumbnailURL) {
         this.id = id;
         this.shortDescription = shortDescription;
         this.description = description;
         this.videoURL = videoURL;
         this.thumbnailURL = thumbnailURL;
-    }*/
+    }
 
     public int getId() {
         return id;
